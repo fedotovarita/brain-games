@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/fedotovarita/frontend-project-lvl1.git"
   },
   "author": "",
@@ -17,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/fedotovarita/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/fedotovarita/frontend-project-lvl1#readme"
+  "type": "module",
+  "homepage": "https://github.com/fedotovarita/frontend-project-lvl1#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
 }
