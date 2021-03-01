@@ -9,7 +9,7 @@ const getGameTask = () => {
   for (let i = num1; i < num1 + (num2 * progressionLength); i += num2) {
     progression.push(i);
   }
-  const unknownNum = numberRandomizer(1, 10);
+  const unknownNum = numberRandomizer(1, 9);
   const rightAnswer = progression[unknownNum];
   progression[unknownNum] = '..';
   let progressionToString = progression.join(' ');
