@@ -15,8 +15,9 @@ const runTheGame = (text, gameQuestion) => {
       console.log('Correct!');
       i += 1;
     } else {
-      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${question[1]}. Let's try again, ${name}!`);
-      i = 0;
+      console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${question[1]}.`);
+      console.log(`Let's try again, ${name}!`);
+      break;
     }
     if (i === iterations) {
       console.log(`Congratulations, ${name}!`);
