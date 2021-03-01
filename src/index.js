@@ -6,7 +6,8 @@ const getTheAnswer = () => readlineSync.question('Your answer: ');
 const runTheGame = (text, gameQuestion) => {
   const name = getUserName();
   console.log(text);
-  for (let i = 0; i < 3;) {
+  const iterations = 3;
+  for (let i = 0; i < iterations;) {
     const question = gameQuestion();
     console.log(`Question: ${question[0]}`);
     const userAnswer = getTheAnswer();
@@ -17,7 +18,7 @@ const runTheGame = (text, gameQuestion) => {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${question[1]}. Let's try again, ${name}!`);
       i = 0;
     }
-    if (i === 3) {
+    if (i === iterations) {
       console.log(`Congratulations, ${name}!`);
     }
   }

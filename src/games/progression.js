@@ -4,8 +4,9 @@ const gameText = 'What number is missing in the progression?';
 const getGameTask = () => {
   const num1 = numberRandomizer(1, 15);
   const num2 = numberRandomizer(1, 5);
+  const progressionLength = 10;
   let progression = [];
-  for (let i = num1; i < num1 + (num2 * 10); i += num2) {
+  for (let i = num1; i < num1 + (num2 * progressionLength); i += num2) {
     progression.push(i);
   }
   const unknownNum = numberRandomizer(1, 10);
