@@ -1,4 +1,4 @@
-import { numberRandomizer } from '../numberRandomizer.js';
+import numberRandomizer from '../numberRandomizer.js';
 
 const gameText = 'What is the result of the expression?';
 const getTheCalculation = () => {

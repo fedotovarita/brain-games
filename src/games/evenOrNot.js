@@ -1,4 +1,4 @@
-import { numberRandomizer } from '../numberRandomizer.js';
+import numberRandomizer from '../numberRandomizer.js';
 
 const getRandomNumber = () => {
   const num = numberRandomizer(1, 100);

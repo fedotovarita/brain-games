@@ -1,4 +1,4 @@
-import { numberRandomizer } from '../numberRandomizer.js';
+import numberRandomizer from '../numberRandomizer.js';
 
 const gameText = 'Find the greatest common divisor of given numbers.';
 
