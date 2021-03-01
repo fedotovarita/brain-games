@@ -3,4 +3,4 @@ const numberRandomizer = (min, max) => {
   return Math.floor(rand);
 };
 
-export default { numberRandomizer };
+export default numberRandomizer;
