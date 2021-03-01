@@ -1,5 +1,5 @@
-import { getUserName } from './cli.js';
 import readlineSync from 'readline-sync';
+import getUserName from './cli.js';
 
 const getTheAnswer = () => readlineSync.question('Your answer: ');
 
@@ -24,4 +24,4 @@ const runTheGame = (text, gameQuestion) => {
     }
   }
 };
-export { runTheGame };
+export default runTheGame;
